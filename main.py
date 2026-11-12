@@ -394,5 +394,6 @@ set_site_information(
     planning="CS1 Final Project",
     links=["https://github.com/HarrisonCottom/CS106-Final-Project"]
 )
-
+hide_debug_information()
+set_website_framed(False)
 start_server(State())
