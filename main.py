@@ -391,7 +391,7 @@ set_site_information(
     author="Harrison Cottom",
     description="An educational traffic timing calculator",
     sources=[],
-    planning="CS1 Final Project",
+    planning=["Harrison Cottom CS1 Final Project Concept.pdf","Harrison Cottom CS1 Final Project 1_ Design.pdf"],
     links=["https://github.com/HarrisonCottom/CS106-Final-Project"]
 )
 hide_debug_information()
