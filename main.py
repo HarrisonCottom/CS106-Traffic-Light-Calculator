@@ -237,21 +237,21 @@ def traffic_input(state: State) -> Page:
         Header("Traffic Information"),
         "Intersection: " + state.current_intersection_name,
 
-        "Enter North/South vehicles per hour:",
+        "\nEnter North/South vehicles per hour:",
         TextBox(
             "north_south_volume",
             state.current_north_south_volume,
             "number"
         ),
 
-        "Enter East/West vehicles per hour:",
+        "/nEnter East/West vehicles per hour:",
         TextBox(
             "east_west_volume",
             state.current_east_west_volume,
             "number"
         ),
 
-        "Enter the total signal cycle length in seconds:",
+        "/nEnter the total signal cycle length in seconds:",
         TextBox(
             "cycle_length",
             state.current_cycle_length,
@@ -353,19 +353,19 @@ def results(state: State) -> Page:
         
         "Intersection: " + state.current_intersection_name,
         
-        "North/South Volume: " + str(state.current_north_south_volume),
+        "/nNorth/South Volume: " + str(state.current_north_south_volume),
         
-        "East/West Volume: " + str(state.current_east_west_volume),
+        "/nEast/West Volume: " + str(state.current_east_west_volume),
         
-        "Cycle Length: " + str(state.current_cycle_length) + " seconds",
+        "/nCycle Length: " + str(state.current_cycle_length) + " seconds",
         
-        "North/South Traffic: " + str(state.current_north_south_percentage) + "%",
+        "/nNorth/South Traffic: " + str(state.current_north_south_percentage) + "%",
         
-        "East/West Traffic: " + str(state.current_east_west_percentage) + "%",
+        "/nEast/West Traffic: " + str(state.current_east_west_percentage) + "%",
         
-        "Estimated North/South Green Time: " + str(state.current_north_south_green) + " seconds",
+        "/nEstimated North/South Green Time: " + str(state.current_north_south_green) + " seconds",
         
-        "Estimated East/West Green Time: " + str(state.current_east_west_green) + " seconds",
+        "/nEstimated East/West Green Time: " + str(state.current_east_west_green) + " seconds",
         
         Button("Edit Traffic Information", "traffic_input"),
 
